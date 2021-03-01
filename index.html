@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Anime</title>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="imagenes/animelogo.png" alt="logo" class="logo"></a>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Animes</a></li>
+                <li><a href="#">Destacados</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>La mejor web<br>para ver<span> Anime</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, doloribus unde ex expedita necessitatibus vitae. Tenetur expedita atque quasi? Ad quia totam asperiores quam dolorem aperiam commodi labore perferendis neque.</p>
+                <a href="#">Leer Mas</a>
+            </div>
+            <div class="imgBox">
+                <img src="imagenes/doraemon.png" alt="doraemon" class="doraemon">
+            </div>
+            </div>
+            <ul class="thumb">
+                <li><img src="imagenes/dora.png" onclick="imgSlider('imagenes/image.png');changeCircleColor('#0090D5')"></li>
+                <li><img src="imagenes/pika.png" onclick="imgSlider('imagenes/pokemon.png');changeCircleColor('#FFD622')"></li>
+                <li><img src="imagenes/digi.png" onclick="imgSlider('imagenes/digi.png');changeCircleColor('#F58529')"></li>
+            </ul>
+            <ul class="sci">
+                <li><a href="#"><img src="imagenes/facebook.png" alt="facebook"></a></li>
+                <li><a href="#"><img src="imagenes/instagram.png" alt="facebook"></a></li>
+                <li><a href="#"><img src="imagenes/twitter.png" alt="facebook"></a></li>
+            </ul>
+    </section>
+
+    <script type="text/javascript"> function imgSlider (anything){
+        document.querySelector('.doraemon').src = anything;
+    }
+
+    function changeCircleColor(color){
+        const circle = document.querySelector('.circle');
+        circle.style.background = color;
+    }
+    </script>
+
+</body>
+</html>
